@@ -39,11 +39,11 @@
         app:layout_constraintVertical_bias="0.214" />
 
     <EditText
-        android:id="@+id/siPassword"
+        android:id="@+id/siId"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:ems="10"
-        android:hint="Password"
+        android:hint="BP/Court/Judge/PP/Jailer ID"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
