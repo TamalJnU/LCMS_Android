@@ -29,7 +29,7 @@ public class LoginActivity extends AppCompatActivity {
         loginUserId = findViewById(R.id.siLoginUserId);
         loginRegister = findViewById(R.id.tvRegister);
 
-        Database db = new Database(getApplicationContext(), "user", null, 1);
+        Database db = new Database(getApplicationContext(), "androiddb", null, 1);
 
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -125,7 +125,7 @@ public class EditUserActivity extends AppCompatActivity {
         Toast.makeText(this, "Name: " +name + " Gender: " + gender  + " Email: " + email
                 + " Address: " + address + " Role: " + role
                 + " Start Date: " + startdate, Toast.LENGTH_SHORT).show();
-        Database db = new Database(getApplicationContext(), "user", null,1);
+        Database db = new Database(getApplicationContext(), "androiddb", null,1);
 
         btnUpdateUser.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -50,7 +50,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         btnCreateUser = findViewById(R.id.userCreateBtn);
 
-        Database db = new Database(getApplicationContext(), "user", null, 1);
+        Database db = new Database(getApplicationContext(), "androiddb", null, 1);
 
         btnCreateUser.setOnClickListener(new View.OnClickListener() {
             @Override
