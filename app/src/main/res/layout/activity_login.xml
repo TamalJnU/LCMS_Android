@@ -8,6 +8,33 @@
 
     tools:context=".LoginActivity">
 
+    <Spinner
+        android:id="@+id/spinnerLoginRole"
+        android:layout_width="130dp"
+        android:layout_height="54dp"
+        android:entries="@array/role"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.711"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.418" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="97dp"
+        android:layout_height="30dp"
+        android:text=" Role"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.254"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.426" />
+
     <Button
         android:id="@+id/siButtonSignin"
         android:layout_width="128dp"
@@ -26,7 +53,7 @@
         android:id="@+id/textView"
         android:layout_width="268dp"
         android:layout_height="54dp"
-        android:text="LCMS App"
+        android:text="LCMS Mobile"
         android:textAlignment="center"
         android:textColor="#284945"
         android:textSize="34sp"
@@ -39,7 +66,7 @@
         app:layout_constraintVertical_bias="0.214" />
 
     <EditText
-        android:id="@+id/siId"
+        android:id="@+id/siLoginUserId"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:ems="10"
@@ -51,20 +78,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.532" />
-
-    <EditText
-        android:id="@+id/siEmail"
-        android:layout_width="248dp"
-        android:layout_height="50dp"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.43" />
 
     <TextView
         android:id="@+id/tvRegister"

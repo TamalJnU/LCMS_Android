@@ -17,11 +17,11 @@ import android.widget.Toast;
 
 import com.tamal.lcmsapp.entity.User;
 
+import java.text.DateFormat;
 import java.util.Calendar;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    EditText idUser;
     EditText userIdUser;
     EditText nameUser;
     RadioGroup genderUser;
@@ -90,7 +90,7 @@ public class RegisterActivity extends AppCompatActivity {
                 user.setRole(role);
                 user.setStartDate(startDate);
 
-                db.addNewEmployee(user);
+                db.addNewUser(user);
             }
         });
 
@@ -102,6 +102,7 @@ public class RegisterActivity extends AppCompatActivity {
                 int mYear = c.get(Calendar.YEAR); // current year
                 int mMonth = c.get(Calendar.MONTH); // current month
                 int mDay = c.get(Calendar.DAY_OF_MONTH); // current day
+                //String currentDateString = DateFormat.getDateInstance(DateFormat.FULL).format(c.getTime());
                 // date picker dialog
                 datePicker = new DatePickerDialog(RegisterActivity.this,
                         new DatePickerDialog.OnDateSetListener() {
@@ -117,13 +118,13 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
-//        listOfUser.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(), ListEmployee.class);
-//                startActivity(intent);
-//            }
-//        });
+        listOfUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), UserListActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
     }

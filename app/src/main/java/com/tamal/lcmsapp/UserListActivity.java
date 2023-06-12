@@ -27,7 +27,7 @@ public class UserListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_list);
 
-        Database db = new Database(getApplicationContext(), "user", null, 1);
+        Database db = new Database(getApplicationContext(), "androiddb", null, 1);
         userList = new ArrayList<>();
         userList = db.getAllUsers();
 
